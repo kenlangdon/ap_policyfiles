@@ -7,10 +7,7 @@
 name 'base_windows'
 
 # Where to find external cookbooks:
-default_source :supermarket
-# default_source :chef_server, "https://#{ENV['AUTOMATE_HOSTNAME']}/organizations/#{ENV['CHEF_ORG']}"  do |s|
-#   s.preferred_for "audit_agr", "cis-windows-ms-2016"
-# end
+default_source :chef_server, "https://#{ENV['AUTOMATE_HOSTNAME']}/organizations/#{ENV['CHEF_ORG']}" ]
 
 # Specify a custom source for a cookbook:
 cookbook 'chef-client', '~> 12.0.1'  ## Stage 1 - Base
